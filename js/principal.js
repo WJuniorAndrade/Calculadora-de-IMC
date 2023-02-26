@@ -1,20 +1,25 @@
-let tela = document.querySelector("#tela")
-let nome = document.querySelector("#nome")
-let altura = document.querySelector("#altura")
-let peso = document.querySelector("#peso")
+/* var formulario = document.querySelector(".formulario"); */
+/* var nome = formulario.querySelector("#nome");
+var altura = formulario.querySelector("#altura");
+var peso = formulario.querySelector("#peso") */
 
 
 
-function calcular() {
-    var altu = Number(altura.value)
-    var pes = Number(peso.value)
-    soma = pes / (altu * altu)
-    tela.innerHTML=` ${usuario} seu IMC é ${soma}`
+
+var calcular = document.querySelector("#calcular")
+
+calcular.addEventListener("click", function (event){
+    event.preventDefault();
     
-}
+    var formulario = document.querySelector(".formulario");
 
+    nome = formulario.nome.value;
+    altura = formulario.altura.value;
+    peso = formulario.peso.value;
 
+    var somar = peso / (altura * altura);
 
+    var titulo = document.querySelector("#titulo");
+    titulo.textContent= somar.toFixed(2);
 
-
-/* Pesquisar como faria o codigo para ixibir tudo na tela */
+})
