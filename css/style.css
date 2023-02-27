@@ -88,7 +88,13 @@ table {
     background-color: var(--laranja);
 }
 
-td,
-th {
+/* td,th {
     border: 1px solid black;
+} */
+
+
+/* Validação JS */
+.status-paciente {
+    background-color: rgba(0, 128, 0, 0.319);
 }
+
