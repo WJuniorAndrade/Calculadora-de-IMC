@@ -24,6 +24,8 @@
     --button-calcular: #7D7E75;
     --button-calcular-hover: #6d6d6a;
 
+    --background-color-mobile: white;
+
 
     --font-Roboto: 'Roboto', sans-serif;
     --font-color: white;
@@ -32,7 +34,7 @@
 }
 
 body {
-    background-color: var(--body-background);
+    background-color: var(--background-color-mobile);
     font-family: var(--font-Roboto);
 }
 
