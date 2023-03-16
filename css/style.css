@@ -34,13 +34,13 @@
 }
 
 body {
-    background-color: var(--background-color-mobile);
+    background-color: var(--body-background);
     font-family: var(--font-Roboto);
 }
 
 
 @media screen and (max-width: 500px) {
     body {
-        background-color: none;
+        background-color: var(--background-color-mobile);
     }
 }
