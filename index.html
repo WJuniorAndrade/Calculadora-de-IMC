@@ -10,79 +10,182 @@
 
 
         <script src="js/principal.js" defer></script>
+        <script src="js/tabela.js" defer></script>
+        <link rel="shortcut icon" href="imagens/Logotipo Moda Loja Minimalista Preto e Branco.svg" type="image/x-icon">
     </head>
 
     <body>
 
-        <section id="bg-section">
+        <header>
+            <nav class="container">
 
-            <h1 id="titulo">Calculadora de IMC</h1>
+                <img class="logo-menu" src="imagens/firstDay-LogoTransparente.svg" alt="Logo do site">
 
-            <form class="formulario">
+                <ul class="navigation-bar container">
 
-                <label class="estilo-label" for="nome">Nome:</label>
-                <input type="text" name="nome" id="nome" class="input-estilo" placeholder="Digite seu nome">
+                    <li> <a class="itens-navigation" href="#link-calculate">Calculate</a></li>
 
-                <label class="estilo-label" for="altura"> Altura:</label>
-                <input type="number" name="altura" id="altura" class="input-estilo" placeholder="Digite sua altura">
+                    <li><a class="itens-navigation" href="#link-table">Table</a></li>
 
-                <label class="estilo-label" for="peso">Peso:</label>
-                <input type="number" name="peso" id="peso" class="input-estilo" placeholder="Digite seu peso">
+                    <li><a class="itens-navigation" id="home" href="#link-footer">About</a></li>
 
-                <button id="calcular">Calcular</button>
+                </ul>
+            </nav>
+        </header>
 
-            </form>
+        <main>
+            
+            <section class="bg-section" id="link-calculate">
 
-            <P>Criado por: <a href="#">Junior Andrade</a></P>
+                <h1 id="titulo">Calculadora de IMC</h1>
 
-        </section>
+                <div class="area-calcular">
 
-        <section>
+                    <form class="formulario">
 
-                <table id="tabela">
-                    <thead class="titulo-tabela">
+                        <div class="formulario">
+                            <label class="estilo-label" for="nome">Nome:</label>
+                            <input type="text" name="nome" id="nome" class="input-estilo" placeholder="Digite seu nome">
+                        </div>
+
+                        <div class="formulario">
+                            <label class="estilo-label" for="altura"> Altura:</label>
+                            <input type="number" name="altura" id="altura" class="input-estilo"
+                            placeholder="Digite sua altura">
+                        </div>
+
+                        <div class="formulario">
+                            <label class="estilo-label" for="peso">Peso:</label>
+                            <input type="number" name="peso" id="peso" class="input-estilo"
+                            placeholder="Digite seu peso">
+                        </div>
+
+                        <button id="calcular">Calcular</button>
+                    </form>
+
+                    <img id="image-form" src="imagens/formImage.svg" alt="Exercicio academia">
+
+                </div>
+
+            </section>
+
+            <section class="barra-imagem"> </section>
+
+            <section class="tabela-section">
+
+                <table class="tabela" id="link-table">
+                    <thead>
                         <tr>
-                            <th>IMC</th>
-                            <th>Classificação</th>
-                            <th>Grau</th>
+                            <th class="titulo-tabela">IMC</th>
+                            <th class="titulo-tabela">Classificação</th>
+                            <th class="titulo-tabela">Grau</th>
                         </tr>
                     </thead>
                     <tbody>
-
                         <tr id="magreza">
                             <td>Menor que (18,5)</td>
                             <td>MAGREZA</td>
                             <td>0</td>
                         </tr>
-
                         <tr id="normal">
                             <td>Entre (18,6 e 24,9)</td>
                             <td>NORMAL</td>
                             <td>0</td>
                         </tr>
-
                         <tr id="sobrepeso">
                             <td>Entre (25 e 29,9)</td>
                             <td>SOBREPESO</td>
                             <td>1</td>
                         </tr>
-
                         <tr id="obesidade">
                             <td>Entre (30 e 39,9)</td>
                             <td>OBESIDADE</td>
                             <td>2</td>
                         </tr>
-
                         <tr id="obesidadeGrave">
                             <td>Igual/maior que (40)</td>
                             <td>OBESIDADE GRAVE</td>
                             <td>3</td>
                         </tr>
-
-
                     </tbody>
                 </table>
-        </section>
+
+                <div class="painel"></div>
+
+            </section> 
+
+            <footer id="link-footer">
+                
+                <div class="container-footer">
+
+                    <div class="info-nav">
+                        <img class="imagem-footer" src="imagens/firstDay-LogoTransparente.svg" alt="Imagem do Desenvolvedor do site">
+                    </div>
+
+                    <div class="info-nav">
+                        <h2 class="title-footer">Inicio</h2>
+                        <a href="#home" >Home</a>
+                        <a href="#link-calculate">Calculate</a>
+                        <a href="#link-table">Table</a>
+                    </div>
+
+                    <div class="info-nav">
+                        <h2 class="title-footer">Sobre</h2>
+                        <a href="#">Informações da Empresa</a>
+                        <a href="#">Contato</a>
+                        <a href="#">Blog</a>
+                    </div>
+
+                    <div class="info-nav">
+                        <h2 class="title-footer">Suporte</h2>
+                        <a href="#">Email</a>
+                        <a href="#">Telefone</a>
+                        <a href="#">Chat</a>
+                    </div>
+
+                    <div class="info-nav">
+
+                        <h2 class="title-footer autor-page">Junior Andrade</h2>
+
+                        <p>"Não desista dos seus sonhos." Abraços...</p>
+
+                        <nav id="midias-sociais">
+                            <a href="https://www.instagram.com/junior.add_/"target="_blank"><img class="itens-social-midia" src="favicon/instagram.png" alt="Icon Instagram"></a>
+
+                            <a href="https://github.com/WJuniorAndrade?tab=overview&from=2023-03-01&to=2023-03-13" target="_blank"><img class="itens-social-midia" src="favicon/github.png" alt="Icon GitHub"></a>
+
+                            <a href="https://www.linkedin.com/in/juniorandrade2022/"  target="_blank" ><img class="itens-social-midia" src="favicon/linkedin.png" alt="Icon Linkedin"></a>
+
+                            <a href="https://www.facebook.com/junior.andradi.12"  target="_blank"><img class="itens-social-midia"  src="favicon/facebook.png" alt="Icon Facebook"></a>
+                        </nav>
+                    </div>
+                </div>
+
+
+                <!-- Mobile Footer -->
+                <div class="mobile-footer" id="link-footer">
+
+                    <img class="imagem-footer" src="imagens/firstDay-LogoTransparente.svg" alt="Imagem do Desenvolvedor do site">
+                    
+
+                    <h2 class="title-footer">Junior Andrade</h2>
+
+                    <p>"Não desista dos seus sonhos." Abraços...</p>
+
+                    <nav id="midias-sociais">
+                        <a href="https://www.instagram.com/junior.add_/"target="_blank"><img class="itens-social-midia" src="favicon/instagram.png" alt="Icon Instagram"></a>
+
+                        <a href="https://github.com/WJuniorAndrade?tab=overview&from=2023-03-01&to=2023-03-13" target="_blank"><img class="itens-social-midia" src="favicon/github.png" alt="Icon GitHub"></a>
+
+                        <a href="https://www.linkedin.com/in/juniorandrade2022/"  target="_blank" ><img class="itens-social-midia" src="favicon/linkedin.png" alt="Icon Linkedin"></a>
+
+                        <a href="https://www.facebook.com/junior.andradi.12"  target="_blank"><img class="itens-social-midia"  src="favicon/facebook.png" alt="Icon Facebook"></a>
+                    </nav>
+                </div>
+
+            </footer>
+            
+        </main>
 
     </body>
 

@@ -1,0 +1,80 @@
+.tabela-section {
+    width: 80vw;
+    height: 50vh;
+    margin: auto;
+}
+
+.painel {
+    width: 35vw;
+    height: 10vh;
+    margin: auto;
+    background-image: var(--background-gradient-black);
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px 5px 40px 5px;
+    justify-content: center;
+    align-items: center;
+    color: var(--font-color);
+}
+
+table {
+    width: 80vw;
+    text-align: center;
+    padding: 20px;
+    margin: 10px 0px;
+}
+
+.titulo-tabela {
+    font-size: 1.5em;
+    font-weight: 600;
+    background-color: var(--title-tabela);
+}
+
+
+td {
+    font-size: 1em;
+    padding: 10px;
+} 
+
+
+/* Validação JS */
+.status-paciente {
+    background-color: rgba(0, 128, 0, 0.319);
+}
+
+/* class de estilo JS */
+.text-painel {
+    font-size: 1.2em;
+    border-radius: 5px 40px 5px 40px;
+    transition: 1s;
+    font-family: var(--font-Roboto);
+    text-transform: uppercase;
+}
+
+
+@media screen and (max-width: 500px){
+    .tabela-section {
+        width: 90vw;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    .painel {
+        width: 85vw;
+        height: 12vh;
+        font-size: 1em;
+    }
+    
+    table {
+        width: 90vw;
+        padding: 0px;
+        margin: 10px 0px;
+    }
+    
+    td {
+        font-size: 1em;
+        padding: 10px 5px;
+    } 
+}

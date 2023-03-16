@@ -1,0 +1,130 @@
+.bg-section {
+    width: 80vw;
+    height: 100vh;
+    margin: auto;
+    font-family: var(--font-Roboto);
+}
+
+#titulo {
+    text-align: center;
+    font-size: 2.5em;
+    font-family: var(--font-Roboto);
+    font-weight: 200;
+    padding: 40px 20px;
+    text-transform: uppercase;
+}
+
+.area-calcular {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#image-form {
+    height: 75vh;
+    border-radius: 2em;
+    box-shadow: 5px 5px 20px 10px rgba(0, 0, 0, 0.37);
+}
+
+.formulario {
+    width: 40vw;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-direction: column;
+
+}
+
+.estilo-label {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.input-estilo {
+    width: 100%;
+    height: 8vh;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 1.5em;
+}
+
+/* trocar cor do bottun e hover */
+#calcular {
+    background-color: var(--button-calcular);
+    width: 50%;
+    height: 8%;
+    margin: 0px auto;
+    font-size: 1.5em;
+    font-weight: 400;
+    text-transform: uppercase;
+    border: 0.5px solid rgba(0, 0, 0, 0.19);
+    font-family: var(--font-Roboto);
+}
+
+#calcular:hover {
+    background-color: var(--button-calcular-hover);
+}
+
+.barra-imagem {
+    background-image: url(../imagens/barra-section.svg);
+    width: 100%;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .bg-section {
+        width: 100vw;
+        height:75vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    #titulo {
+        font-size: 1.8em;
+        padding: 10px;
+    }
+
+    .area-calcular {
+        display: block;
+        justify-content: none;
+        gap: none;
+        
+    }
+
+    #image-form {
+        display: none;
+    }
+
+    .formulario {
+        width: 90vw;
+        margin: auto;
+        
+    }
+
+    .estilo-label {
+        font-size: 1.2em;
+    }
+    
+    .input-estilo {
+        font-size: 1em;
+        margin-bottom: 15px
+    }
+
+    #calcular {
+        padding: 5px;
+        margin: 10px auto;
+
+    }
+
+    .barra-imagem {
+        height: 25vh;
+        margin: 10px 0px;
+    }
+}
