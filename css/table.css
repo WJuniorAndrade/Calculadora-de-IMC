@@ -46,7 +46,7 @@ td {
 .text-painel {
     font-size: 1.2em;
     border-radius: 5px 40px 5px 40px;
-    transition: 1s;
+    transition: 1.5s;
     font-family: var(--font-Roboto);
     text-transform: uppercase;
 }
