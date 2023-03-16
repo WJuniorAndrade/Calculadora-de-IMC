@@ -120,7 +120,7 @@
     #calcular {
         padding: 5px;
         margin: 10px auto;
-
+        background-color: var(--button-title-tabela);
     }
 
     .barra-imagem {

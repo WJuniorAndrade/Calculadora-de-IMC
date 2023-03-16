@@ -19,13 +19,12 @@
     --background-gradient-black: linear-gradient(to right, #030303, #191818, #1c1919 , #191818, #030303);
     --footer-background: #0F0F0F;
 
-    --title-tabela: #7D7E75;
+    --button-title-tabela: #b3b3b0;
     
     --button-calcular: #7D7E75;
     --button-calcular-hover: #6d6d6a;
 
     --background-color-mobile: white;
-
 
     --font-Roboto: 'Roboto', sans-serif;
     --font-color: white;
