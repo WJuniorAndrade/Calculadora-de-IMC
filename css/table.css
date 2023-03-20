@@ -1,6 +1,6 @@
 .tabela-section {
     width: 80vw;
-    height: 50vh;
+    height: 60vh;
     margin: auto;
 }
 
@@ -19,21 +19,19 @@
 
 table {
     width: 80vw;
+    height: 40vh;
     text-align: center;
     padding: 20px;
     margin: 10px 0px;
 }
 
 .titulo-tabela {
-    font-size: 1.5em;
+    font-size: 1.8em;
     font-weight: 600;
-    background-color: var(--title-tabela);
 }
 
-
 td {
-    font-size: 1em;
-    padding: 10px;
+    font-size: 1.2em;
 } 
 
 
@@ -52,9 +50,11 @@ td {
 }
 
 
+
+/* MOBILE */
 @media screen and (max-width: 500px){
     .tabela-section {
-        width: 90vw;
+        width: 95vw;
         height: 60vh;
         display: flex;
         flex-direction: column;
@@ -68,19 +68,38 @@ td {
     }
     
     table {
-        width: 90vw;
+        width: 95vw;
         padding: 0px;
-        margin: 10px 0px;
     }
 
     .titulo-tabela {
-        font-size: 1.5em;
-        font-weight: 400;
-        background-color: var(--button-title-tabela);
+        font-size: 1.4em;
+        font-weight: 600;
+        padding: 0px 5px;
     }
     
     td {
         font-size: 1em;
-        padding: 10px 5px;
+        padding: 10px 0px;
+      
     } 
+}
+
+
+
+
+/* LAPTOPS */
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .tabela-section {
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .painel {
+        margin: 0px auto;
+    }
+    
 }

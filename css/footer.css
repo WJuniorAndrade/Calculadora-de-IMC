@@ -6,7 +6,6 @@ footer {
 .container-footer {
     width: 90vw;
     height: 50vh;
-    margin: auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -16,6 +15,7 @@ footer {
 .info-nav {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .imagem-footer {
@@ -49,18 +49,22 @@ footer {
 }
 
 #midias-sociais {
-    margin: 5px auto;
+    display: flex;
+    justify-content: space-around;
 }
 
 .itens-social-midia {
     width: 30px;
-    margin: 6px 15px;
+    margin: 5px 15px;
 }
 
 .mobile-footer {
     display: none;
 }
 
+
+
+/* MOBILE */
 @media screen and (max-width: 500px){ 
     .container-footer {
         display: none;
@@ -104,4 +108,18 @@ footer {
         margin: 0px 15px;
     }
     
+}
+
+
+/* LAPTOPS */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .imagem-footer {
+        display: none;
+        
+    }
+
+    .info-nav p {
+        padding: 8px 0px;
+        font-size: 1em; 
+    }
 }

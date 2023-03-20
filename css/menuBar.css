@@ -39,7 +39,7 @@ header {
 }
 
 
-
+/* Mobile */
 @media screen and (max-width: 500px){
     header {
         display: block;
@@ -58,5 +58,32 @@ header {
     .itens-navigation {
         padding: 0px 10px;
         font-size: 1em;
+    }
+}
+
+/* Laptops */
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    header {
+        background-position: 75% 25%;  
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: var(--menu-bar);
+    }
+    
+    .logo-menu {
+        width: 8vw;
+    }
+
+    .itens-navigation {
+        font-size: 1.1em;
+    }
+
+    .navigation-bar {
+        background-color: transparent;
     }
 }
