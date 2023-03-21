@@ -73,6 +73,11 @@ footer {
         
     }
 
+    .container-footer {
+        height: 30vh;
+        
+    }
+
     .info-nav p {
         padding: 8px 0px;
         font-size: 1em; 
