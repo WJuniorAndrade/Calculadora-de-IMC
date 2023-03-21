@@ -39,8 +39,67 @@ header {
 }
 
 
+/* Laptops */
+
+@media screen and (min-width: 769px) and (max-width: 1280px) {
+    header {
+        height: 60vh;
+        background-position: 70% 20%;  
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: var(--menu-bar);
+    }
+
+    .itens-navigation:hover {
+        text-decoration: none;
+    }
+    
+    .logo-menu {
+        width: 10vw;
+    }
+
+    .itens-navigation {
+        font-size: 1.1em;
+    }
+
+    .navigation-bar {
+        background-color: transparent;
+    }
+}
+
+
+/* TABLET */
+@media screen and (min-width: 481px) and (max-width: 768px){
+    header {
+        height: 50vh;
+        background-position: 75% 25%;
+    }
+
+    .itens-navigation:hover {
+        text-decoration: none;
+    }
+    
+    .logo-menu {
+        width: 10vw;
+    }
+
+    .itens-navigation {
+        font-size: 1em;
+    }
+
+    .navigation-bar {
+        background-color: transparent;
+    }
+}
+
+
+
 /* Mobile */
-@media screen and (max-width: 500px){
+@media screen and (max-width: 480px){
     header {
         display: block;
         height: 50vh;
@@ -58,32 +117,5 @@ header {
     .itens-navigation {
         padding: 0px 10px;
         font-size: 1em;
-    }
-}
-
-/* Laptops */
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-    header {
-        background-position: 75% 25%;  
-    }
-
-    .container {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        background-color: var(--menu-bar);
-    }
-    
-    .logo-menu {
-        width: 8vw;
-    }
-
-    .itens-navigation {
-        font-size: 1.1em;
-    }
-
-    .navigation-bar {
-        background-color: transparent;
     }
 }

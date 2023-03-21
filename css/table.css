@@ -1,5 +1,5 @@
 .tabela-section {
-    width: 80vw;
+    width: 100%;
     height: 60vh;
     margin: auto;
 }
@@ -22,7 +22,7 @@ table {
     height: 40vh;
     text-align: center;
     padding: 20px;
-    margin: 10px 0px;
+    margin: 10px auto;
 }
 
 .titulo-tabela {
@@ -38,6 +38,7 @@ td {
 /* Validação JS */
 .status-paciente {
     background-color: rgba(0, 128, 0, 0.319);
+    transition: 1.5s;
 }
 
 /* class de estilo JS */
@@ -51,8 +52,51 @@ td {
 
 
 
+
+
+/* LAPTOPS */
+
+@media screen and (min-width: 769px) and (max-width: 1280px) {
+    .tabela-section {
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .painel {
+        width: 60vw;
+        margin: 20px auto;
+    }
+
+    table {
+        margin: 0px auto;
+    }
+    
+}
+
+
+
+
+/* TABLET */
+@media screen and (min-width: 481px) and (max-width: 768px){
+    .painel {
+        width: 70vw;
+        height: 10vh;
+    }
+    
+    table {
+        width: 90vw;
+        height: 40vh;
+    } 
+}
+
+
+
+
 /* MOBILE */
-@media screen and (max-width: 500px){
+@media screen and (max-width: 480px){
     .tabela-section {
         width: 95vw;
         height: 60vh;
@@ -83,23 +127,4 @@ td {
         padding: 10px 0px;
       
     } 
-}
-
-
-
-
-/* LAPTOPS */
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-    .tabela-section {
-        height: 70vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .painel {
-        margin: 0px auto;
-    }
-    
 }
