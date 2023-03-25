@@ -32,7 +32,7 @@ table {
 
 td {
     font-size: 1.2em;
-} 
+}
 
 
 /* Validação JS */
@@ -73,30 +73,30 @@ td {
     table {
         margin: 0px auto;
     }
-    
+
 }
 
 
 
 
 /* TABLET */
-@media screen and (min-width: 481px) and (max-width: 768px){
+@media screen and (min-width: 481px) and (max-width: 768px) {
     .painel {
         width: 70vw;
         height: 10vh;
     }
-    
+
     table {
         width: 90vw;
         height: 40vh;
-    } 
+    }
 }
 
 
 
 
 /* MOBILE */
-@media screen and (max-width: 480px){
+@media screen and (max-width: 480px) {
     .tabela-section {
         width: 95vw;
         height: 60vh;
@@ -104,13 +104,13 @@ td {
         flex-direction: column;
         justify-content: space-around;
     }
-    
+
     .painel {
         width: 85vw;
         height: 12vh;
         font-size: 1em;
     }
-    
+
     table {
         width: 95vw;
         padding: 0px;
@@ -121,10 +121,10 @@ td {
         font-weight: 600;
         padding: 0px 5px;
     }
-    
+
     td {
         font-size: 1em;
         padding: 10px 0px;
-      
-    } 
+
+    }
 }

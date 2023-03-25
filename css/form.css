@@ -25,7 +25,7 @@
 
 }
 
-#image-form  {
+#image-form {
     width: 100%;
     height: 95%;
     border-radius: 25px;
@@ -83,7 +83,7 @@
 
 
 /* LAPTOPS */
-@media screen and (min-width: 769px) and (max-width: 1280px){
+@media screen and (min-width: 769px) and (max-width: 1280px) {
     .bg-section {
         width: 95vw;
         height: 80vh;
@@ -106,26 +106,26 @@
         gap: none;
     }
 
-    #image-form  {
+    #image-form {
         width: 100%;
         height: 50vh;
     }
 
     .formulario {
-        width: 40vw; 
-        height: 100%;   
+        width: 40vw;
+        height: 100%;
     }
-    
+
     .estilo-label {
         font-size: 1.5em;
         margin-bottom: 0px;
     }
-    
+
     .input-estilo {
         width: 90%;
         height: 8vh;
         font-size: 1.2em;
-        
+
     }
 
     #calcular {
@@ -139,7 +139,7 @@
     #calcular:hover {
         background-color: none;
     }
-    
+
 
     .barra-imagem {
         width: 100%;
@@ -147,23 +147,23 @@
         background-position: 30% 70%;
 
     }
-    
+
 }
 
 
 /* TABLET */
-@media screen and (min-width: 481px) and (max-width: 768px){
+@media screen and (min-width: 481px) and (max-width: 768px) {
     .bg-section {
         width: 80vw;
         height: 100vh;
-    } 
-
-    #titulo {
-        font-size: 2em;
-        font-weight: 600;  
     }
 
-    
+    #titulo {
+        font-size: 2em; 
+        font-weight: 600;
+    }
+
+
     .area-calcular {
         width: 100%;
         height: 70vh;
@@ -174,7 +174,7 @@
 
     }
 
-    #image-form  {
+    #image-form {
         display: none;
     }
 
@@ -193,7 +193,7 @@
 
     .barra-imagem {
         height: 40vh;
-    }   
+    }
 }
 
 
@@ -204,7 +204,7 @@
 @media screen and (max-width: 480px) {
     .bg-section {
         width: 100vw;
-        height:85vh;
+        height: 85vh;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -219,7 +219,7 @@
         display: block;
         justify-content: none;
         gap: none;
-        
+
     }
 
     #image-form {
@@ -235,7 +235,7 @@
     .estilo-label {
         font-size: 1.2em;
     }
-    
+
     .input-estilo {
         font-size: 1em;
         margin-bottom: 15px
@@ -251,7 +251,7 @@
     #calcular:hover {
         background-color: none;
     }
-    
+
 
     .barra-imagem {
         height: 25vh;
